@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import {useEffect, useState} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLightbulb} from '@fortawesome/free-solid-svg-icons';
@@ -39,7 +39,6 @@ export default function Navbar() {
                 <Link href="/">
                     <div className={styles.logo}>EcoApplication</div>
                 </Link>
-
                 <button className={`${styles.toggle}`} onClick={toggleDarkMode}>
                     <FontAwesomeIcon icon={faLightbulb} color={darkMode ? "white" : "black"}/>
                 </button>
