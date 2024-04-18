@@ -2,18 +2,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
     font-weight: bold;
+    width: 99%;
+    margin-left: 0.5%;
+    box-shadow: 0 0 5px rgb(187, 182, 182);
 }
 
 .logo {
-    font-size: 1.25rem;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.coordinates {
+    margin-left: 30px;
+    font-weight: normal;
+}
+
+.Auth {
+    font-weight: bold;
+    margin-left: 154vh;
+    font-size: 20px;
 }
 
 .toggle {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-left: auto;
+    color: #333;
+    transition: color 0.3s ease;
 }

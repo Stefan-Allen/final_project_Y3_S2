@@ -1,5 +1,5 @@
 'use client'
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useCallback, useMemo} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLightbulb} from '@fortawesome/free-solid-svg-icons';
 import styles from "./page.module.css";
@@ -10,20 +10,24 @@ export default function Navbar() {
     const [notifications, setNotifications] = useState<string[]>([]);
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            setDarkMode(true);
+        if (typeof window !== 'undefined') {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                setDarkMode(true);
+            }
         }
     }, []);
 
-    const toggleDarkMode = () => {
+    const toggleDarkMode = useCallback(() => {
         const newMode = !darkMode;
         setDarkMode(newMode);
-        localStorage.setItem('theme', newMode ? 'dark' : 'light');
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('theme', newMode ? 'dark' : 'light');
+        }
 
         const message = newMode ? 'Dark mode enabled!' : 'Light mode enabled!';
         setNotifications([message, ...notifications]);
-    };
+    }, [darkMode, notifications]);
 
     useEffect(() => {
         if (darkMode) {
@@ -33,14 +37,23 @@ export default function Navbar() {
         }
     }, [darkMode]);
 
+    const color = useMemo(() => darkMode ? "white" : "black", [darkMode]);
+
     return (
         <main className={`${styles.main} ${darkMode ? 'dark' : ''}`}>
             <div className={styles.navbar}>
                 <Link href="/">
                     <div className={styles.logo}>EcoApplication</div>
                 </Link>
+
+                <Link href="/">
+                    <div className={styles.coordinates}>Coordinates Locator</div>
+                </Link>
+                <Link href="/">
+                    <div className={styles.Auth}>Login</div>
+                </Link>
                 <button className={`${styles.toggle}`} onClick={toggleDarkMode}>
-                    <FontAwesomeIcon icon={faLightbulb} color={darkMode ? "white" : "black"}/>
+                    <FontAwesomeIcon icon={faLightbulb} color={color}/>
                 </button>
             </div>
         </main>

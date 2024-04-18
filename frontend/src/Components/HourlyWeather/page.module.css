@@ -1,0 +1,113 @@
+.weather-app {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.app-title {
+    text-align: center;
+    margin: 5vh;
+}
+
+.weather-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.selected-day-title {
+    text-align: center;
+    margin-bottom: 2.5vh;
+}
+
+.day-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.selected-day {
+    display: flex;
+    align-items: center;
+}
+
+.selected-day p {
+    margin-left: 10px;
+}
+
+.hourly-weather {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 3%;
+}
+
+.hourly-forecast {
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #34adad; /* Lighter background color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    color: #333; /* Darker text color */
+    cursor: pointer;
+}
+
+.hourly-forecast p {
+    margin: 5px 0;
+    color: white;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-navigation button {
+    background-color: #00796b; /* Darker background color */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.day-navigation button:hover {
+    background-color: #004d40; /* Darker hover color */
+    transition: 0.5s;
+}
+
+.hourly-forecast:hover {
+    background-color: #b2dfdb; /* Lighter hover color */
+    transition: 0.5s;
+}
+
+.day-navigation button:disabled {
+    background-color: rgba(112, 112, 112, 0.69);
+    transition: 0.5s;
+    cursor: not-allowed;
+}
+
+.day-navigation button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.pollution-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.pollution-data { display: inline-block; flex-direction: column; align-items: center; justify-content: center; margin-top: 20px;}
+.pollution-levels { display: flex; flex-wrap: wrap; justify-content: center; width: 110%; margin-left: -15px}
+.pollution-item { margin: 10px; padding: 10px; border-radius: 10px; background-color: #34adad; box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); color: #ffffff; }
