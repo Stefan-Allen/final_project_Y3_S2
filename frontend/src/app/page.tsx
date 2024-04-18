@@ -1,23 +1,12 @@
-import {getServerSideProps as getWeatherData } from "../Components/HourlyWeather/WeatherApi";
-import HourlyWeather, {WeatherAppProps} from "../Components/HourlyWeather/HourlyWeather";
-import Navbar from "@/Components/NavBar/navbar";
+import React from 'react';
+import Navbar from "@/Components/NavBar/Navbar";
+import HourlyWeather from "@/Components/HourlyWeather/HourlyWeather";
 
-
-const HomePage: React.FC<WeatherAppProps> = ({ latitude, longitude, weatherData, error }) => {
-  // You can use the fetched data here...
+export default function App() {
   return (
-    <div>
+    <>
         <Navbar/>
-      <HourlyWeather
-          latitude={latitude}
-          longitude={longitude}
-          weatherData={weatherData}
-          error={error}
-      />
-    </div>
+        <HourlyWeather/>
+    </>
   );
-};
-
-export { getWeatherData as getServerSideProps };
-
-export default HomePage;
+}

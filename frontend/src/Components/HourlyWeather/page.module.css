@@ -9,7 +9,7 @@
 }
 
 .weather-container {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
@@ -39,7 +39,7 @@
     white-space: nowrap;
     margin-bottom: 20px;
     display: flex;
-    margin-left: 3%;
+    margin-left: 3.5%;
 }
 
 .hourly-forecast {
@@ -50,7 +50,6 @@
     background-color: #34adad; /* Lighter background color */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     color: #333; /* Darker text color */
-    cursor: pointer;
 }
 
 .hourly-forecast p {
@@ -85,7 +84,7 @@
 }
 
 .hourly-forecast:hover {
-    background-color: #b2dfdb; /* Lighter hover color */
+    background-color: rgba(52, 173, 173, 0.82); /* Lighter hover color */
     transition: 0.5s;
 }
 
@@ -98,16 +97,3 @@
 .day-navigation button:not(:last-child) {
     margin-right: 10px;
 }
-
-.pollution-data {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-
-}
-
-.pollution-data { display: inline-block; flex-direction: column; align-items: center; justify-content: center; margin-top: 20px;}
-.pollution-levels { display: flex; flex-wrap: wrap; justify-content: center; width: 110%; margin-left: -15px}
-.pollution-item { margin: 10px; padding: 10px; border-radius: 10px; background-color: #34adad; box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); color: #ffffff; }

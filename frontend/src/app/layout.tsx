@@ -1,22 +1,14 @@
-"use client"
-import {Inter, Roboto} from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
-const robotoFont = Roboto({ weight: "400", subsets: ["latin"] });
 
-const metadata = {
-    title: "EnviroCare",
-    description: "EnviroCare Application",
-};
+interface RootLayoutProps {
+    children: ReactNode;
+}
 
-export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
-
+export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en">
-            <body className={robotoFont.className}>
+            <body style={{ fontFamily: 'Fira Code, monospace' }}>
                 {children}
             </body>
         </html>

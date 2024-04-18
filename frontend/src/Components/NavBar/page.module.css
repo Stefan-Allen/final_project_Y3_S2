@@ -1,29 +1,32 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-radius: 0 0 10px 10px;
-    font-weight: bold;
-    width: 99%;
-    margin-left: 0.5%;
+    margin: 0 10px;
     box-shadow: 0 0 5px rgb(187, 182, 182);
 }
 
-.logo {
-    font-size: 20px;
+.logo, .coordinates, .Auth, .toggle {
     transition: color 0.3s ease;
 }
 
+.logo, .Auth {
+    font-size: 20px;
+}
+
 .coordinates {
-    margin-left: 30px;
-    font-weight: normal;
+    margin-left: 2.5vh;
+}
+
+.rightItems {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .Auth {
-    font-weight: bold;
-    margin-left: 154vh;
-    font-size: 20px;
+    margin-left: -11vh;
 }
 
 .toggle {
@@ -31,7 +34,6 @@
     border: none;
     cursor: pointer;
     font-size: 24px;
-    margin-left: auto;
+    margin-left: -2vh;
     color: #333;
-    transition: color 0.3s ease;
 }
