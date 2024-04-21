@@ -1,0 +1,356 @@
+.content {
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.content2 {
+    margin-top: 2vh;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 5vh;
+    padding: 5px;
+    margin-left: 44.5%;
+}
+
+.button {
+    margin: 0 10px;
+    background-color: #34adad;
+    color: white;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #2c8a8a;
+}
+
+.article {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-bottom: 5vh;
+    padding: 4vh;
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+
+.p {
+    margin-bottom: 20px;
+
+}
+
+.articlescontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.roundedbutton {
+    padding: 10px 10px;
+    border-radius: 50px;
+    border: black 1px;
+    width: 80%;
+    background-color: #dedede;
+    margin-left: 10%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 2vh;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mainheading {
+    font-size: 20px;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: 2.5vh;
+}
+
+.map {
+    margin-left: 37%;
+    margin-bottom: 10vh;
+}
+
+.mapselected {
+    margin-top: 2vh;
+    margin-left: -2vh;
+}
+
+.buttoncorrinates {
+    background-color: rgba(112, 112, 112, 0.69);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttoncorrinates:hover {
+    background-color: rgba(112, 112, 112, 0.84);
+    transition: 0.3s;
+}
+
+.noScroll {
+    overflow: hidden;
+    height: 100vh; /* This will make sure your component takes up the full height of the viewport */
+}
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 12.5vh 65vh 25vh 70vh;
+    height: 70vh;
+    text-align: left;
+}
+
+.contentSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainContentSection {
+    width: 65vh;
+    margin-top: -27.5vh;
+}
+
+.mainHeading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10vh;
+    width: 50vh;
+}
+
+.blackSquare {
+    margin-left: 30vh;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: transparent;
+    z-index: 2; /* Add this line */
+}
+
+.logo, .coordinates, .Auth, .toggle {
+    transition: color 0.3s ease;
+}
+
+.logo, .Auth {
+    font-size: 20px;
+    margin-left: 18vh;
+}
+
+.coordinates {
+    margin-left: 3vh;
+}
+
+.WeatherPage {
+    margin-left: 3vh;
+}
+
+.RealtimePollution {
+    margin-left: 3vh;
+}
+
+.Education {
+    margin-left: 3vh;
+}
+
+.rightItems {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.Auth {
+    margin-left: -30vh;
+}
+
+.toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    margin-left: -20vh;
+    color: #333;
+}
+
+.weather-app {
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10vh;
+    height: 85vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.app-title {
+    text-align: center;
+    margin: 5vh;
+}
+
+.weather-container {
+    max-width: 950px;
+    margin: 10px auto;
+}
+
+.selected-day-title {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.day-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.selected-day {
+    display: flex;
+    align-items: center;
+}
+
+.selected-day p {
+    margin-left: 10px;
+}
+
+.hourly-weather {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 3.5%;
+}
+
+.hourly-forecast {
+    text-align: center;
+    margin-right: 12.5px;
+    padding: 15px;
+    border-radius: 12.5px;
+    background-color: #34adad; /* Lighter background color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    color: #333; /* Darker text color */
+}
+
+.hourly-forecast p {
+    margin: 5px 0;
+    color: white;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day-navigation button {
+    background-color: #00796b; /* Darker background color */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.day-navigation button:hover {
+    background-color: #004d40; /* Darker hover color */
+    transition: 0.5s;
+}
+
+.hourly-forecast:hover {
+    background-color: rgba(52, 173, 173, 0.82); /* Lighter hover color */
+    transition: 0.5s;
+}
+
+.day-navigation button:disabled {
+    background-color: rgba(112, 112, 112, 0.69);
+    transition: 0.5s;
+    cursor: not-allowed;
+}
+
+.day-navigation button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.roundedbutton {
+    width: 20vh;
+    margin-left: 2vh;
+    margin-top: 2.5vh;
+    background-color: #34adad;
+    color: white;
+}
+
+.roundedbutton:hover {
+    background-color: rgba(52, 173, 173, 0.84);
+}
+
+.buttonQuiz {
+    display: inline-block;
+}

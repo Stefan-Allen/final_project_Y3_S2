@@ -66,3 +66,16 @@ C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebA
 C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.pdb
 C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.genruntimeconfig.cache
 C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\obj\Debug\net8.0\ref\WebApplication1.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\AWSSDK.Core.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\DnsClient.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\Snappier.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Tig10\Documents\GitHub\final_project_Y3_S2\backend\WebApplication1\WebApplication1\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll

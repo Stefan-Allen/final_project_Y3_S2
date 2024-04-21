@@ -2,15 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5720a3f9-91f3-455f-92a2-18efe73a4de7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Articles/Articles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/Articles/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/CoordinatesLocator/Coordinates/Coordinates.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/CoordinatesLocator/Coordinates/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/CoordinatesLocator/CorrdinatesMap/MapComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/CoordinatesLocator/CorrdinatesMap/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/HomePage/HomeImage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/Components/HomePage/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Article/ArticleOne/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Article/ArticleOne/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Article/ArticleThree/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Article/ArticleThree/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Article/ArticleTwo/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Article/ArticleTwo/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/Coordinates/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/RealtimePollution/page.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/RealtimePollution/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/WeatherPage/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/Components/NavBar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/NavBar/navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/HourlyWeather/HourlyWeather.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/WeatherSection/HourlyWeather/HourlyWeather.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/HourlyWeather/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/WeatherSection/HourlyWeather/page.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Components/NavBar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/NavBar/Navbar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components/NavBar/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components/NavBar/page.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/page.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/page.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
     </list>
@@ -25,24 +44,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2ey9i0thqj1eO2cclUWy69iAfMS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Tig10/Documents/GitHub/final_project_Y3_S2/frontend",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tig10/Documents/GitHub/final_project_Y3_S2/frontend&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -52,7 +71,11 @@
       <option name="presentableId" value="Default" />
       <updated>1712866075737</updated>
       <workItem from="1712866077938" duration="54000" />
+      <workItem from="1713591478859" duration="12000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

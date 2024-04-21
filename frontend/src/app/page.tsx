@@ -1,12 +1,12 @@
 import React from 'react';
 import Navbar from "@/Components/NavBar/Navbar";
-import HourlyWeather from "@/Components/HourlyWeather/HourlyWeather";
+import HomeImage from "@/Components/HomePage/HomeImage";
 
 export default function App() {
-  return (
-    <>
-        <Navbar/>
-        <HourlyWeather/>
-    </>
-  );
+    return (
+        <>
+            <Navbar/>
+            <HomeImage/>
+        </>
+    );
 }

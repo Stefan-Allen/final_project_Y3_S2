@@ -5,6 +5,9 @@
       "dom.iterable",
       "esnext"
     ],
+    "types": [
+      "googlemaps"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -31,7 +34,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
