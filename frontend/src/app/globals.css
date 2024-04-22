@@ -5,10 +5,16 @@
     --max-width: 1100px;
     --border-radius: 12px;
 
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 33, 33, 33;
+    --background-end-rgb: 33, 33, 33;
+    background-color: #212121;
+}
+
+.light {
     --foreground-rgb: 33, 33, 33;
     --background-start-rgb: 215, 215, 215;
     --background-end-rgb: 255, 255, 255;
-    background-color: #212121;
 }
 
 .dark {
@@ -38,7 +44,7 @@ body {
             rgb(var(--background-end-rgb))
     ) rgb(var(--background-start-rgb));
     font-family: 'Roboto', sans-serif;
-    height: 145vh;
+
 }
 
 a {

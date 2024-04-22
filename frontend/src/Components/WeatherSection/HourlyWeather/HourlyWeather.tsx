@@ -57,7 +57,6 @@ const WeatherApp: React.FC = () => {
         year: 'numeric'
     });
 
-
     const kelvinToCelsius = (kelvin: number) => kelvin - 273.15; // Define 'kelvinToCelsius'
 
     const getDailyWeather = () => {
@@ -69,7 +68,6 @@ const WeatherApp: React.FC = () => {
         }
         return [];
     };
-
 
     return (
         <div className={`${styles["weather-app"]} `}>

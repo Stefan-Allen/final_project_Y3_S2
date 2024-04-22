@@ -7,12 +7,13 @@ import {QuizProvider} from "../../../Components/Quizzes/QuizProvider";
 import QuizDetails from "../../../Components/Quizzes/QuizDetails";
 import Navbar from "@/Components/NavBar/Navbar";
 import {Route, Routes} from 'react-router-dom';
+import {DarkModeProvider} from '@/Components/NavBar/DarkModeProvider';
 
 const Router = dynamic(() => import('react-router-dom').then(mod => mod.BrowserRouter), {ssr: false});
 
 const QuizPage: React.FC = () => {
     return (
-        <>
+        <DarkModeProvider>
             <Navbar/>
             <div>
                 <Router>
@@ -27,7 +28,7 @@ const QuizPage: React.FC = () => {
                     </QuizProvider>
                 </Router>
             </div>
-        </>
+        </DarkModeProvider>
     );
 };
 

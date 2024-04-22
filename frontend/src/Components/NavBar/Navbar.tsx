@@ -1,25 +1,16 @@
 "use client"
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLightbulb} from '@fortawesome/free-solid-svg-icons';
 import styles from "../../app/page.module.css";
 import Link from 'next/link';
+import DarkModeContext from "@/Components/NavBar/DarkModeContext";
 
 export default function Navbar() {
-    const [darkMode, setDarkMode] = useState(false);
+    const {darkMode, toggleDarkMode} = useContext(DarkModeContext);
 
     useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        setDarkMode(savedTheme === 'dark');
-    }, []);
-
-    const toggleDarkMode = useCallback(() => {
-        const newMode = !darkMode;
-        setDarkMode(newMode);
-        localStorage.setItem('theme', newMode ? 'dark' : 'light');
-    }, [darkMode]);
-
-    useEffect(() => {
+        document.documentElement.classList.add('light');
         document.documentElement.classList.toggle('dark', darkMode);
     }, [darkMode]);
 
@@ -50,7 +41,6 @@ export default function Navbar() {
                     <button className={styles.toggle} onClick={toggleDarkMode}>
                         <FontAwesomeIcon icon={faLightbulb} color={color}/>
                     </button>
-
                 </div>
             </div>
         </main>
