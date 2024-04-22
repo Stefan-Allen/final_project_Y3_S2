@@ -6,16 +6,22 @@ interface DarkModeProviderProps {
 }
 
 export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({children}) => {
-    const savedTheme = localStorage.getItem('theme');
-    const [darkMode, setDarkMode] = useState(savedTheme === 'dark');
+    const [darkMode, setDarkMode] = useState<boolean>(false);
 
     const toggleDarkMode = useCallback(() => {
         const newMode = !darkMode;
         setDarkMode(newMode);
-        localStorage.setItem('theme', newMode ? 'dark' : 'light');
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('theme', newMode ? 'dark' : 'light');
+        }
     }, [darkMode]);
 
     useEffect(() => {
+        let savedTheme: string | null = null;
+        if (typeof window !== 'undefined') {
+            savedTheme = localStorage.getItem('theme');
+        }
+        setDarkMode(savedTheme === 'dark');
         document.documentElement.classList.add('light');
         document.documentElement.classList.toggle('dark', darkMode);
     }, [darkMode]);
