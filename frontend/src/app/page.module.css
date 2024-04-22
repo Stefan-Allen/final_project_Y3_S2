@@ -215,7 +215,7 @@
     z-index: 2; /* Add this line */
 }
 
-.logo, .coordinates, .Auth, .toggle {
+.logo, .coordinates, .Auth, .WeatherPage, .RealtimePollution, .Education .toggle {
     transition: color 0.3s ease;
 }
 
@@ -238,6 +238,7 @@
 
 .Education {
     margin-left: 3vh;
+    transition: color 0.3s ease;
 }
 
 .rightItems {
