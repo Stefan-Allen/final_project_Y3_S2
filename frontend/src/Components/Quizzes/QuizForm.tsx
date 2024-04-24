@@ -11,7 +11,7 @@ const QuizForm: React.FC = () => {
     const [quizzes, setQuizzes] = useState<Quiz[]>([]);
     const [questions, setQuestions] = useState<{ question: string; answer: string }[]>([]);
     const [searchTerm, setSearchTerm] = useState(''); // New state variable for the search term
-    const [showAnswer, setShowAnswer] = useState(false);
+    const [showAnswer, setShowAnswer] = useState<{ [key: number]: number | null }>({}); // Change this line
 
     useEffect(() => {
         const fetchQuizzes = async () => {
@@ -123,11 +123,15 @@ const QuizForm: React.FC = () => {
                         <div key={qIndex}>
                             <div>
                                 <div>{quiz.name}</div>
+                                {showAnswer[index] === qIndex && <p>Answer: {question.answer}</p>}
+                                <button onClick={() => setShowAnswer(prevState => ({
+                                    ...prevState,
+                                    [index]: prevState[index] === qIndex ? null : qIndex
+                                }))}>
+                                    {showAnswer[index] === qIndex ? 'Hide Answer' : 'Show Answer'}
+                                </button>
                             </div>
-                            <button onClick={() => setShowAnswer(!showAnswer)}>
-                                {showAnswer ? 'Hide Answer' : 'Show Answer'}
-                            </button>
-                            {showAnswer && <p>Answer: {question.answer}</p>}
+
                         </div>
                     ))}
                 </div>
