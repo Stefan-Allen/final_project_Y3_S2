@@ -74,14 +74,12 @@ const QuizForm: React.FC = () => {
                 throw new Error('Failed to send the quiz');
             }
 
-            // Refresh the page after the form is submitted successfully
             window.location.reload();
         } catch (error) {
             console.error(error);
         }
     };
 
-    // Filter quizzes based on search term
     const filteredQuizzes = quizzes.filter(quiz => quiz.name.toLowerCase().includes(searchTerm.toLowerCase()));
 
     return (

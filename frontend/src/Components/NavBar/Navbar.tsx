@@ -37,6 +37,9 @@ export default function Navbar() {
             <Link href="/Education">
                 <div className={styles.Education}>Education</div>
             </Link>
+            <Link href="/EnviroCareAI">
+                <div className={styles.EnviroCareAI}>EnviroCareAI</div>
+            </Link>
             <div className={styles.rightItems}>
                 <button className={styles.toggle} onClick={toggleDarkMode}>
                     <FontAwesomeIcon icon={faLightbulb} color={darkMode ? "white" : "black"}/>

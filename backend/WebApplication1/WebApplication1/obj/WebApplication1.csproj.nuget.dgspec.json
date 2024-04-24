@@ -62,6 +62,14 @@
               "target": "Package",
               "version": "[2.25.0, )"
             },
+            "OpenAI": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            },
+            "OpenAI.ChatGPT": {
+              "target": "Package",
+              "version": "[4.1.0-alpha, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"

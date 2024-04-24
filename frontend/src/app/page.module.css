@@ -264,6 +264,11 @@
     transition: color 0.3s ease;
 }
 
+.EnviroCareAI {
+    margin-left: 3vh;
+    transition: color 0.3s ease;
+}
+
 .rightItems {
     margin-left: auto;
     display: flex;
