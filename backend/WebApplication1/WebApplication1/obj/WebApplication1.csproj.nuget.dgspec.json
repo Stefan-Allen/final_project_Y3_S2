@@ -42,6 +42,14 @@
               "target": "Package",
               "version": "[8.0.0-rc.2.23480.2, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.24172.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.24172.4, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.25.0, )"

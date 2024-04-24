@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../../app/page.module.css';
-import Image from 'next/image';
 
 const HomeImage = () => (
     <div className={`${styles.homePage} ${styles.noScroll}`}>

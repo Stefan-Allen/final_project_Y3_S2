@@ -1,33 +1,15 @@
 "use client"
 import React from 'react';
-import dynamic from 'next/dynamic';
-import DisplayQuiz from "../../../Components/Quizzes/DisplayQuiz";
-import QuizForm from "../../../Components/Quizzes/QuizForm";
-import {QuizProvider} from "../../../Components/Quizzes/QuizProvider";
-import QuizDetails from "../../../Components/Quizzes/QuizDetails";
 import Navbar from "@/Components/NavBar/Navbar";
-import {Route, Routes} from 'react-router-dom';
 import {DarkModeProvider} from '@/Components/NavBar/DarkModeProvider';
-
-const Router = dynamic(() => import('react-router-dom').then(mod => mod.BrowserRouter), {ssr: false});
+import QuizForm from "@/Components/Quizzes/QuizForm";
 
 const QuizPage: React.FC = () => {
+
     return (
         <DarkModeProvider>
             <Navbar/>
-            <div>
-                <Router>
-                    <QuizProvider>
-                        <Routes>
-                            <Route path="/quiz/code/:code" element={<QuizDetails/>}/>
-                            <Route path="/quiz/:quizId" element={<QuizDetails/>}/>
-                            <Route path="/Education/Quizzes" element={<><DisplayQuiz/><QuizForm/></>}/>
-                            <Route path="/Quizzes" element={<><DisplayQuiz/><QuizForm/></>}/>
-                            <Route path="/" element={<><DisplayQuiz/><QuizForm/></>}/>
-                        </Routes>
-                    </QuizProvider>
-                </Router>
-            </div>
+            <QuizForm/>
         </DarkModeProvider>
     );
 };

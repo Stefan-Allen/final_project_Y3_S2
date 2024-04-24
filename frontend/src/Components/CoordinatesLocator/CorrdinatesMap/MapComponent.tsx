@@ -40,11 +40,11 @@ const MapComponent: React.FC<MapComponentProps> = ({selectedCoordinates, setSele
     };
 
     if (loadError) {
-        return <div>Error loading maps</div>;
+        return <div className={styles.maploading}>Error loading maps</div>;
     }
 
     if (!isLoaded) {
-        return <div>Loading maps</div>;
+        return <div className={styles.maploading}>Loading maps</div>;
     }
 
     return (
