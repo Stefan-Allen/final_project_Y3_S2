@@ -1,6 +1,8 @@
 "use client"
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Navbar from "@/Components/NavBar/Navbar";
+import styles from "../page.module.css";
+import {DarkModeProvider} from '../../Components/NavBar/DarkModeProvider';
 
 const ChatBot = () => {
     const [input, setInput] = useState('');
@@ -12,7 +14,7 @@ const ChatBot = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ message: input }),
+            body: JSON.stringify({message: input}),
         });
 
         const data = await result.json();
@@ -20,16 +22,28 @@ const ChatBot = () => {
     };
 
     return (
-        <div>
-            <Navbar />
-            <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-            />
-            <button onClick={askAI}>Ask</button>
-            <p>{response}</p>
-        </div>
+        <DarkModeProvider>
+            <div>
+                <Navbar/>
+                <h1 className={styles.AIHeading}>EnviroCare AI</h1>
+                <h3 className={styles.AIUnderHeading}>Ask me a question </h3>
+                <div className={styles.AIHight}>
+                    <form onSubmit={(e) => {
+                        e.preventDefault();
+                        askAI();
+                    }}>
+                        <input className={styles.AIInput}
+                               type="text"
+                               placeholder={"Ask me a question"}
+                               value={input}
+                               onChange={(e) => setInput(e.target.value)}
+                        />
+                        <button className={styles.AIButton} type="submit">Ask</button>
+                    </form>
+                    <p className={styles.AIResponse}>{response}</p>
+                </div>
+            </div>
+        </DarkModeProvider>
     );
 };
 
