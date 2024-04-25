@@ -176,7 +176,7 @@ const WeatherApp: React.FC = () => {
                         </div>
                         {pollutionData && (
                             <div className={styles.weatherpollution}>
-                                <h2>Pollution Data - Current Air Quality: {pollutionData.index}</h2>
+                                <h2>Current Pollution Data - Current Air Quality: {pollutionData.index}</h2>
                                 <p>0 to 50: Good | 51 to 100: Moderate | 101 to 150: Unhealthy | 151 to 200: Unhealthy |
                                     201 to 300: Very Unhealthy | 301 and higher: Hazardous</p>
                                 <h2 className={styles.weathercomponents}>Components:</h2>

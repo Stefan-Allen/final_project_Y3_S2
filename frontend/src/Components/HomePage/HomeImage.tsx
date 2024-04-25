@@ -15,8 +15,7 @@ const HomeImage = () => (
             <p className={styles.mainContentSection}>
                 The Pollution Tracker is a user-friendly application that provides real-time environmental pollution
                 updates.
-                It offers an intuitive interface, detailed pollutant reports, and a feature for users to report
-                pollution incidents.
+                It offers an intuitive interface, detailed pollutant updates, and features including artificial intelligence and a mapping service.
             </p><div className={styles.HomeButton}>
             <Link className={styles.HomepageButton} href={'MapPage'}>RealTimeData</Link>
             <Link className={styles.HomepageButton} href={'WeatherPage'}>Forecast</Link>

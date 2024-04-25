@@ -106,17 +106,17 @@
     cursor: pointer;
 }
 
-.mainheading {
-    font-size: 20px;
-    margin-top: 5vh;
+.mainheadingHome {
+    font-size: 28px;
+    margin-top: -20vh;
     font-weight: bold;
 }
 
 .heading {
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 2vh;
     font-weight: normal;
-    margin-bottom: 1vh;
+    margin-bottom: 3vh;
 }
 .heading1 {
     font-size: 14px;
@@ -132,6 +132,12 @@
 .map {
     margin-left: 37%;
     margin-bottom: 10vh;
+}
+
+.MapAlign {
+    text-align: center;
+    margin-top: 10vh;
+
 }
 
 .mapselected {
@@ -164,6 +170,15 @@
 
 .CoordinatesHeight {
     height: 120vh;
+}
+
+.containerCoordinate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
 }
 
 .articleScroll {
@@ -302,6 +317,11 @@
 }
 
 .EnviroCareAI {
+    margin-left: 3vh;
+    transition: color 0.3s ease;
+}
+
+.Coordinates {
     margin-left: 3vh;
     transition: color 0.3s ease;
 }

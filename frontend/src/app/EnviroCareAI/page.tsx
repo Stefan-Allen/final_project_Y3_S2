@@ -26,7 +26,8 @@ const ChatBot = () => {
             <div>
                 <Navbar/>
                 <h1 className={styles.AIHeading}>EnviroCare AI</h1>
-                <h3 className={styles.AIUnderHeading}>Ask me a question </h3>
+                <h3 className={styles.AIUnderHeading}>Ask me a generalized question about pollution </h3>
+                <h4 className={styles.AIUnderHeading}>Example: What is co2</h4>
                 <div className={styles.AIHight}>
                     <form onSubmit={(e) => {
                         e.preventDefault();
