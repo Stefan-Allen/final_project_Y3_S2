@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../../app/page.module.css';
+import {Button} from "@material-ui/core";
+import Link from "next/link";
 
 const HomeImage = () => (
     <div className={`${styles.homePage} ${styles.noScroll}`}>
@@ -7,7 +9,7 @@ const HomeImage = () => (
             <div style={{display: 'flex', alignItems: 'center'}}>
                 <h1 className={styles.mainHeading}>Pollution tracker for the internet</h1>
                 <div className={styles.blackSquare}>
-                    <img src="/AirQuality.png" alt="placeholder" width={900}/>
+                    <img src="/image.png" alt="placeholder" width={800}/>
                 </div>
             </div>
             <p className={styles.mainContentSection}>
@@ -15,7 +17,13 @@ const HomeImage = () => (
                 updates.
                 It offers an intuitive interface, detailed pollutant reports, and a feature for users to report
                 pollution incidents.
-            </p>
+            </p><div className={styles.HomeButton}>
+            <Link className={styles.HomepageButton} href={'MapPage'}>RealTimeData</Link>
+            <Link className={styles.HomepageButton} href={'WeatherPage'}>Forecast</Link>
+            <Link className={styles.HomepageButton} href={'EnviroCareAI'}>EnviroCareAI</Link>
+            <Link className={styles.HomepageButton} href={'MapPage'}>Coordinates</Link>
+            <Link className={styles.HomepageButton} href={'MapPage'}>News</Link>
+        </div>
         </div>
     </div>
 );

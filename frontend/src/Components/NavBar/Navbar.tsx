@@ -25,14 +25,11 @@ export default function Navbar() {
             <Link href="/">
                 <div className={styles.logo}>EnviroCare</div>
             </Link>
-            <Link href="/Coordinates">
-                <div className={styles.coordinates}>Coordinates Locator</div>
+            <Link href="/MapPage">
+                <div className={styles.coordinates}>RealTime Data</div>
             </Link>
             <Link href="/WeatherPage">
                 <div className={styles.WeatherPage}>Forecast Tracker</div>
-            </Link>
-            <Link href="/RealtimePollution">
-                <div className={styles.RealtimePollution}>Realtime Pollution</div>
             </Link>
             <Link href="/EnviroCareAI">
                 <div className={styles.EnviroCareAI}>EnviroCareAI</div>

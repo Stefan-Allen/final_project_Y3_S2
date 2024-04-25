@@ -1,8 +1,7 @@
 "use client"
 import React, {useState} from 'react';
 import Navbar from "@/Components/NavBar/Navbar";
-import Coordinates from "@/Components/CoordinatesLocator/Coordinates/Coordinates";
-import MapComponent from "@/Components/CoordinatesLocator/CorrdinatesMap/MapComponent";
+import MapComponent from "@/Components/CoordinatesLocator/Map/MapComponent";
 import styles from "../page.module.css";
 import {DarkModeProvider} from '@/Components/NavBar/DarkModeProvider';
 
@@ -19,12 +18,13 @@ export default function CoordinatesSection() {
             <DarkModeProvider>
                 <div className={styles.CoordinatesHeight}>
                     <Navbar/>
-                    <Coordinates selectedCoordinates={selectedCoordinates}
-                                 setSelectedCoordinates={setSelectedCoordinates}/>
-                    <MapComponent selectedCoordinates={selectedCoordinates}
-                                  setSelectedCoordinates={setSelectedCoordinates}/>
-                </div>
+                    <div className={styles.container}>
+                        <div className={styles.mainheading}>RealTime Pollution Map</div>
+                        <div className={styles.heading}>Click on any marker to see pollution for that area.</div></div>
+
+                            <MapComponent/>
+                    </div>
             </DarkModeProvider>
         </>
-    );
+);
 }
