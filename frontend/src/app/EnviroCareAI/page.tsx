@@ -14,7 +14,7 @@ const ChatBot = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({message: input}),
+            body: JSON.stringify({ message: input }),
         });
 
         const data = await result.json();

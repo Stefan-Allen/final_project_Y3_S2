@@ -34,9 +34,6 @@ export default function Navbar() {
             <Link href="/RealtimePollution">
                 <div className={styles.RealtimePollution}>Realtime Pollution</div>
             </Link>
-            <Link href="/Education">
-                <div className={styles.Education}>Education</div>
-            </Link>
             <Link href="/EnviroCareAI">
                 <div className={styles.EnviroCareAI}>EnviroCareAI</div>
             </Link>
