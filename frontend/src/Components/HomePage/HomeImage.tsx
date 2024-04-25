@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '../../app/page.module.css';
-import {Button} from "@material-ui/core";
 import Link from "next/link";
 
 const HomeImage = () => (
@@ -15,14 +14,16 @@ const HomeImage = () => (
             <p className={styles.mainContentSection}>
                 The Pollution Tracker is a user-friendly application that provides real-time environmental pollution
                 updates.
-                It offers an intuitive interface, detailed pollutant updates, and features including artificial intelligence and a mapping service.
-            </p><div className={styles.HomeButton}>
-            <Link className={styles.HomepageButton} href={'MapPage'}>RealTimeData</Link>
-            <Link className={styles.HomepageButton} href={'WeatherPage'}>Forecast</Link>
-            <Link className={styles.HomepageButton} href={'EnviroCareAI'}>EnviroCareAI</Link>
-            <Link className={styles.HomepageButton} href={'MapPage'}>Coordinates</Link>
-            <Link className={styles.HomepageButton} href={'MapPage'}>News</Link>
-        </div>
+                It offers an intuitive interface, detailed pollutant updates, and features including artificial
+                intelligence and a mapping service.
+            </p>
+            <div className={styles.HomeButton}>
+                <Link className={styles.HomepageButton} href={'MapPage'}>RealTimeData</Link>
+                <Link className={styles.HomepageButton} href={'WeatherPage'}>Forecast</Link>
+                <Link className={styles.HomepageButton} href={'EnviroCareAI'}>EnviroCareAI</Link>
+                <Link className={styles.HomepageButton} href={'MapPage'}>Coordinates</Link>
+                <Link className={styles.HomepageButton} href={'MapPage'}>News</Link>
+            </div>
         </div>
     </div>
 );

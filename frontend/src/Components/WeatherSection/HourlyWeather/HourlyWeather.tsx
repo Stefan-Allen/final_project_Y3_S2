@@ -6,22 +6,22 @@ import styles from "../../../app/page.module.css";
 type Forecast = {
     dt: number;
     weather: Array<{ icon: string; description: string }>;
-    main: { temp: number }; // Add the 'main' property
+    main: { temp: number };
 };
 
 const WeatherApp: React.FC = () => {
     const [latitude, setLatitude] = useState<number | null>(null);
     const [longitude, setLongitude] = useState<number | null>(null);
-    const [inputLat, setInputLat] = useState(''); // Add this line
-    const [inputLng, setInputLng] = useState(''); // Add this line
-    const [isGeolocationEnabled, setIsGeolocationEnabled] = useState(false); // Add this line
+    const [inputLat, setInputLat] = useState('');
+    const [inputLng, setInputLng] = useState('');
+    const [isGeolocationEnabled, setIsGeolocationEnabled] = useState(false);
     const [weatherData, setWeatherData] = useState<{ list: Forecast[] } | null>(null);
     const [selectedDay, setSelectedDay] = useState<number>(0);
     const [error, setError] = useState<string | null>(null);
     const [pollutionData, setPollutionData] = useState<PollutionData | null>(null);
 
 
-    const handleSetCoordinates = () => { // Add this function
+    const handleSetCoordinates = () => {
         setLatitude(parseFloat(inputLat));
         setLongitude(parseFloat(inputLng));
     };
@@ -45,9 +45,9 @@ const WeatherApp: React.FC = () => {
             (position) => {
                 setLatitude(position.coords.latitude);
                 setLongitude(position.coords.longitude);
-                setInputLat(position.coords.latitude.toString()); // Add this line
-                setInputLng(position.coords.longitude.toString()); // Add this line
-                setIsGeolocationEnabled(true); // Add this line
+                setInputLat(position.coords.latitude.toString());
+                setInputLng(position.coords.longitude.toString());
+                setIsGeolocationEnabled(true);
             },
             (Error) => {
                 console.error('Error getting geolocation:', Error);
@@ -85,8 +85,8 @@ const WeatherApp: React.FC = () => {
 
     const handleDayChange = (increment: number) => setSelectedDay(selectedDay + increment);
 
-    const handlePrevDay = () => handleDayChange(-1); // Define 'handlePrevDay'
-    const handleNextDay = () => handleDayChange(1); // Define 'handleNextDay'
+    const handlePrevDay = () => handleDayChange(-1);
+    const handleNextDay = () => handleDayChange(1);
 
     const formatTime = (timestamp: number) => new Date(timestamp * 1000).toLocaleTimeString([], {
         hour: '2-digit',
@@ -99,7 +99,7 @@ const WeatherApp: React.FC = () => {
         year: 'numeric'
     });
 
-    const kelvinToCelsius = (kelvin: number) => kelvin - 273.15; // Define 'kelvinToCelsius'
+    const kelvinToCelsius = (kelvin: number) => kelvin - 273.15;
 
     const getDailyWeather = () => {
         if (weatherData && weatherData.list[selectedDay]) {
@@ -115,7 +115,7 @@ const WeatherApp: React.FC = () => {
         <div className={`${styles["weather-app"]} `}>
             <div className={styles["weather-container"]}>
                 {error && <p className={styles.geoerror}>{error}</p>}
-                {!isGeolocationEnabled && ( // Add this line
+                {!isGeolocationEnabled && (
                     <div className={styles.geoerrorinput}>
                         <div className={styles["coordinatesinput"]}>
                             <input

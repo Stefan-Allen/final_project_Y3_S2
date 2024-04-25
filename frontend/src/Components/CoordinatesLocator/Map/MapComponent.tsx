@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {GoogleMap, Marker, InfoWindow, useLoadScript} from '@react-google-maps/api';
+import React, {useEffect, useState} from 'react';
+import {GoogleMap, InfoWindow, Marker, useLoadScript} from '@react-google-maps/api';
 import styles from '../../../app/page.module.css'
 
 interface Coordinates {
@@ -21,11 +21,10 @@ const MapComponent: React.FC = () => {
     };
 
     useEffect(() => {
-        // Fetch pollution data when component mounts and every 5 minutes
         const fetchPollutionData = async () => {
             const response = await fetch('https://api.openaq.org/v1/latest?country=GB', {
                 headers: {
-                    'Authorization': `Bearer ${'d03478471844a8950a8b337c9f98f648bf45ae6f'}` // Replace with your API key
+                    'Authorization': `Bearer ${'d03478471844a8950a8b337c9f98f648bf45ae6f'}`
                 }
             });
             const data = await response.json();
@@ -35,7 +34,7 @@ const MapComponent: React.FC = () => {
         fetchPollutionData();
         const intervalId = setInterval(fetchPollutionData, 5 * 60 * 1000);
 
-        return () => clearInterval(intervalId); // Clean up on unmount
+        return () => clearInterval(intervalId);
     }, []);
 
     if (loadError) {
@@ -64,9 +63,9 @@ const MapComponent: React.FC = () => {
                         }}
                         icon={{
                             url: '/pin.png', // URL of the image
-                            scaledSize: new google.maps.Size(25, 20), // size of the image
-                            origin: new google.maps.Point(0, 0), // origin of the image
-                            anchor: new google.maps.Point(25, 25) // anchor point of the image
+                            scaledSize: new google.maps.Size(25, 20),
+                            origin: new google.maps.Point(0, 0),
+                            anchor: new google.maps.Point(25, 25)
                         }}
                     />
                 ))}

@@ -41,7 +41,7 @@ const CoordinateFinder: React.FC = () => {
                     value={postcode}
                     onChange={(e) => setPostcode(e.target.value)}
                     placeholder="Enter Postcode"
-                    className={styles.input}
+                    className={`${styles.input} ${styles['input-green-text']}`}
                 />
                 <button type="submit" className={styles.buttoncorrinates}>Find Coordinates</button>
             </form>

@@ -22,9 +22,9 @@ export default function CoordinatesSection() {
                         <h1 className={styles.mainheading}>RealTime Pollution Map</h1>
                         <h3 className={styles.heading}>Click on any marker to see pollution for that area.</h3></div>
 
-                            <MapComponent/>
-                    </div>
+                    <MapComponent/>
+                </div>
             </DarkModeProvider>
         </>
-);
+    );
 }

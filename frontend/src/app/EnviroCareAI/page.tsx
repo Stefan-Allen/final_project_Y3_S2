@@ -14,7 +14,7 @@ const ChatBot = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ message: input }),
+            body: JSON.stringify({message: input}),
         });
 
         const data = await result.json();
@@ -27,7 +27,7 @@ const ChatBot = () => {
                 <Navbar/>
                 <h1 className={styles.AIHeading}>EnviroCare AI</h1>
                 <h3 className={styles.AIUnderHeading}>Ask me a generalized question about pollution </h3>
-                <h4 className={styles.AIUnderHeading}>Example: What is co2</h4>
+                <h4 className={styles.AIUnderHeading}>Example: What is co2?</h4>
                 <div className={styles.AIHight}>
                     <form onSubmit={(e) => {
                         e.preventDefault();

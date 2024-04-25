@@ -37,6 +37,9 @@ export default function Navbar() {
             <Link href="/Coordinates">
                 <div className={styles.Coordinates}>Coordinate Locator</div>
             </Link>
+            <Link href="/News">
+                <div className={styles.Coordinates}>News</div>
+            </Link>
             <div className={styles.rightItems}>
                 <button className={styles.toggle} onClick={toggleDarkMode}>
                     <FontAwesomeIcon icon={faLightbulb} color={darkMode ? "white" : "black"}/>
